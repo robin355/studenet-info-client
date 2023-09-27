@@ -1,0 +1,29 @@
+[
+    {
+"name":"Rana",
+"Roll": "355531",
+"class":"ten",
+"section":"A",
+"address":"Mirpur,Dhaka",
+"mobile-no":"01534123614",
+"email":"rana@gmail.com"
+    },
+    {
+"name":"sakib",
+"Roll": "355532",
+"class":"ten",
+"section":"A",
+"address":"Farngate,Dhaka",
+"mobile-no":"01334123614",
+"email":"sakib@gmail.com"
+    },
+    {
+"name":"jabed",
+"Roll": "355535",
+"class":"ten",
+"section":"A",
+"address":"gazipur,Dhaka",
+"mobile-no":"01634123614",
+"email":"jabed@gmail.com"
+    }
+]
