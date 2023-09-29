@@ -5,8 +5,8 @@ const AddStudent = () => {
     const handleSubmit = event => {
         event.preventDefault()
         const form = event.target;
-        const name = form.name;
-        const roll = form.roll.value;
+        const name = form.name.value;
+        const Roll = form.Roll.value;
         const clases = form.clases.value;
         const section = form.section.value;
         const address = form.address.value;
@@ -15,7 +15,7 @@ const AddStudent = () => {
 
         const student = {
             name: name,
-            roll:roll,
+            Roll:Roll,
             clases:clases,
             section:section,
             address:address,
@@ -24,12 +24,12 @@ const AddStudent = () => {
 
         }
         console.log(student)
-        fetch('http://localhost:5000/addstudent', {
+        fetch('https://student-info-server-2er3iek2e-robin355.vercel.app/addstudent', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(student)
+            body: JSON.stringify(student),
         })
 
         .then(res => res.json())
@@ -46,7 +46,7 @@ const AddStudent = () => {
        <form onSubmit={handleSubmit}  >
 <h2 className='text-3xl text-center m-3 text-orange-600'>Please Input Student information:</h2>
 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-<input name='roll' type="text" placeholder="Your Roll" className="input input-bordered w-full " />
+<input name='Roll' type="text" placeholder="Your Roll" className="input input-bordered w-full " />
 <input name='name' type="text" placeholder="Your Name" className="input input-bordered w-full " />
 <input name='clases' type="text" placeholder="Your Class" className="input input-bordered w-full " />
 <input name='section' type="text" placeholder="Your Section" className="input input-bordered w-full " />
